@@ -20,66 +20,90 @@
         
         <div class='hidden_desc' id="page1_desc">
         <h2>ZS</h2>
-        <p>
-
-        </p>
-         
-        </div>
+        <form>
+            <input type="text" id="firstNumber" placeholder="ZE" /><br>
+            <input type="text" id="secondNumber" placeholder="r1+r2" /><br>
+        </form>
+            <input type="button" onclick="subtract()" Value="Calculate" />
+            <p>Zs reading is: 
+            <span id = "result"></span>
+            </p>
+            </div>
        
         <div class='hidden_desc' id="page2_desc">
         <h2>ZE</h2>
-        <p>
-
-        </p>
-         
-        </div>
+        <form>
+            <input type="number" id="firstNumber" placeholder="Zs" /><br>
+            <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
+        </form>
+            <input type="button" onclick="addition()" Value="Calculate" />
+            <p>Zs reading is: <br>
+            <span id = "result"></span>
+            </p>
+            </div>
         
         <div class='hidden_desc' id="page3_desc">
         <h2>r1+r2</h2>
-        <p>
-
-        </p>
-         
-        </div>
-
+        <form>
+            <input type="number" id="firstNumber" placeholder="Zs" /><br>
+            <input type="number" id="secondNumber" placeholder="Ze" /><br>
+        </form>
+            <input type="button" onclick="subtract()" Value="Calculate" />
+            <p>r1+r2 reading is: <br>
+            <span id = "result"></span>
+            </p>
+            </div>
+<!-- needs fine tuning for this formula-->
         <div class='hidden_desc' id="page4_desc">
         <h2>R2</h2>
-        <p>
-
-        </p>
-            
-        </div>
-
+        <form>
+            <input type="number" id="firstNumber" placeholder="R2" /><br>
+            <input type="number" id="secondNumber" placeholder="1.67 for 1.5mm cpc" /><br>
+        </form>
+            <input type="button" onclick="divideBy()" Value="Calculate" />
+            <p>r1+r2 is: <br>
+            <span id = "result"></span>
+            </p>
+            </div>
+<!-- needs new formula for cpc verification-->
         <div class='hidden_desc' id="page5_desc">
         <h2>PFC</h2>
-        <p>
-
-        </p>
-               
-        </div>
-
+        <form>
+            <input type="number" id="firstNumber" placeholder="ZE" /><br>
+            <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
+        </form>
+            <input type="button" onclick="multiplyBy()" Value="Calculate" />
+            <p>Zs reading is: <br>
+            <span id = "result"></span>
+            </p>
+            </div>
+<!-- below needs a new function to multiply cpc resistance by 1.67-->
         <div class='hidden_desc' id="page6_desc">
         <h2>CPC</h2>
-        <p>
-
-        </p>
-               
-        </div>
+        <form>
+            <input type="number" id="firstNumber" placeholder="CPC resistance" /><br>
+            <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
+        </form>
+            <input type="button" onclick="multiplyBy()" Value="Calculate" />
+            <p>Zs reading is: <br>
+            <span id = "result"></span>
+            </p>
+            </div>
         
         <div id="page_content">
          <h2>How to use</h2>
          <p>
-            Zs - Calculate Zs using Ze & r1+r2<br>
+            Zs - Zs &#8486; using Ze & r1+r2<br>
             <br>
-            Ze - Calculate Ze using Zs & r1+r2<br>
+            Ze - Ze &#8486; using Zs & r1+r2<br>
             <br>
-            r1+r2 - Calculate r1+r2 using Ze & Zs<br>
+            r1+r2 - r1+r2 &#8486; using Ze & Zs<br>
             <br>
             R2 - Convert R2 to r1+r2<br>
             <br>
             PFC - Confirm PFC readings<br>
             <br>
-            CPC - Calculate CPC resistance using R1 or RN
+            CPC - CPC &#8486; using R1 or RN
          </p>
          
         </div>
