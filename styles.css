@@ -2,7 +2,7 @@ body {
     background-color: #453F3C;
     margin:0px auto;
     padding:0px;
-    font-family:helvetica;
+    font-family: helvetica;
     height:2000px;
 }
 
@@ -22,7 +22,7 @@ h1 p {
 }
 
 #main_content {
-    width:500px;
+    width: 400px;
     align-items: center;
     margin-top: 50px;
     margin-left: auto;
