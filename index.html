@@ -20,15 +20,15 @@
         
         <div class='hidden_desc' id="page1_desc">
         <h2>ZS</h2>
-        <form>
-            <input type="text" id="firstNumber" placeholder="ZE" /><br>
-            <input type="text" id="secondNumber" placeholder="r1+r2" /><br>
-        </form>
-            <input type="button" onclick="subtract()" Value="Calculate" />
+        
+            <input type="number" id="numberOne" placeholder="ZE" /><br>
+            <input type="number" id="numberTwo" placeholder="r1+r2" /><br>
+        
+            <input type="button" onclick="multiplyBy()" Value="Calculate" />
             <p>Zs reading is: 
-            <span id = "result"></span>
+            <span id="result"></span>
             </p>
-            </div>
+        </div>
        
         <div class='hidden_desc' id="page2_desc">
         <h2>ZE</h2>
@@ -37,8 +37,8 @@
             <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
         </form>
             <input type="button" onclick="addition()" Value="Calculate" />
-            <p>Zs reading is: <br>
-            <span id = "result"></span>
+            <p>Ze reading is: <br>
+            <span id = "resuldt"></span>
             </p>
             </div>
         
@@ -50,43 +50,43 @@
         </form>
             <input type="button" onclick="subtract()" Value="Calculate" />
             <p>r1+r2 reading is: <br>
-            <span id = "result"></span>
+            <span id = "resudlt"></span>
             </p>
             </div>
-<!-- needs fine tuning for this formula-->
+<!--- needs fine tuning for this formula--->
         <div class='hidden_desc' id="page4_desc">
         <h2>R2</h2>
         <form>
             <input type="number" id="firstNumber" placeholder="R2" /><br>
-            <input type="number" id="secondNumber" placeholder="1.67 for 1.5mm cpc" /><br>
+            <input type="number" id="secondNu   mber" placeholder="1.67 for 1.5mm cpc" /><br>
         </form>
             <input type="button" onclick="divideBy()" Value="Calculate" />
-            <p>r1+r2 is: <br>
-            <span id = "result"></span>
+            <p>R2 is: <br>
+            <span id = "resudlt"></span>
             </p>
             </div>
 <!-- needs new formula for cpc verification-->
         <div class='hidden_desc' id="page5_desc">
         <h2>PFC</h2>
         <form>
-            <input type="number" id="firstNumber" placeholder="ZE" /><br>
-            <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
+            <input type="number" id="firstNudmber" placeholder="ZE" /><br>
+            <input type="number" id="secondNdumber" placeholder="r1+r2" /><br>
         </form>
-            <input type="button" onclick="multiplyBy()" Value="Calculate" />
-            <p>Zs reading is: <br>
-            <span id = "result"></span>
+            <input type="button" onclick="multplyBy()" Value="Calculate" />
+            <p>PFC is: <br>
+            <span id = "resudlt"></span>
             </p>
             </div>
 <!-- below needs a new function to multiply cpc resistance by 1.67-->
         <div class='hidden_desc' id="page6_desc">
         <h2>CPC</h2>
         <form>
-            <input type="number" id="firstNumber" placeholder="CPC resistance" /><br>
-            <input type="number" id="secondNumber" placeholder="r1+r2" /><br>
+            <input type="number" id="firstNumdber" placeholder="CPC resistance" /><br>
+            <input type="number" id="secondNudmber" placeholder="r1+r2" /><br>
         </form>
-            <input type="button" onclick="multiplyBy()" Value="Calculate" />
-            <p>Zs reading is: <br>
-            <span id = "result"></span>
+            <input type="button" onclick="multplyBy()" Value="Calculate" />
+            <p>CPC is: <br>
+            <span id = "resudlt"></span>
             </p>
             </div>
         
@@ -105,16 +105,9 @@
             <br>
             CPC - CPC &#8486; using R1 or RN
          </p>
-         
         </div>
-        
        </div>
-
-
-
-
-
 <!--- Link to external JS secript --->
-    <script src="./app.js"></script>
+<script src="./tabs.js"></script>
 </body>
 </html>

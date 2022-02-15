@@ -11,12 +11,17 @@ function change_tab(id) {
     document.getElementById(id).className="selected";
 }
 
- function multiplyBy() {
+function multiplyBy() {
 
-    num1 = document.getElementById("firstNumber").value;
-    num2 = document.getElementById("secondNumber").value;
-    document.getElementById("result").innerHTML = num1 * num2;
+    let num1 = document.getElementById("numberOne").value;
+    let num2 = document.getElementById("numberTwo").value;
+    let result = num1 * num2;
+    document.getElementById("result").innerHTML = result;
+    console.log(result)
+    return (result);
 }
+
+/* these functions require rewrites to make them work 
 
 function divideBy() { 
 
@@ -38,3 +43,5 @@ function addition() {
     num2 = document.getElementById("secondNumber").value;
     document.getElementById("result").innerHTML = num1 + num2;
 }
+
+*/
